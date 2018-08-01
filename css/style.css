@@ -1,0 +1,101 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,#5cbcb7, #65e3f7, #5eb8e4, #65e3f7, #fff);
+}
+
+
+.logo {
+    width: 80px;
+}
+.nav-link {
+    font-size: 18px;
+}
+/* social media icons */
+.social {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+.nav-li {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 10px;
+    transform: transform .2s;
+}
+
+.nav-li:hover {
+    transform: scale(1.2);
+}
+.nav-li a {
+    color: inherit;
+}
+
+/* nav social icon */
+.s {
+    padding-left: 20px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+/* body content */
+.p-container {
+    display: flex;   
+}
+
+.p-btn {
+    font-size: 20px;
+    border: 2px solid black;
+    transition: transform .2s; 
+}
+
+.p-btn:hover {
+    transform: scale(1.2);
+}
+
+.type-container {
+    margin: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+.chev {
+    padding: 5px;
+}
+
+.skills-home {
+    margin-top: 20px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.skill {
+    color: #000;
+    min-width: 100px;
+    margin: 20px;
+  
+}
+
+/* end home body*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    background-color: #222;
+    height: 10%;
+    overflow: hidden;
+}
