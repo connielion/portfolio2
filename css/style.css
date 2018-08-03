@@ -1,9 +1,67 @@
-body {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to right,#5cbcb7, #65e3f7, #5eb8e4, #65e3f7, #fff);
+
+/* glb style */
+.underline {
+    text-decoration: underline;
+}
+.heavy {
+    font-weight: bold;
 }
 
+.white-txt {
+    color: white;
+}
+
+.t-bg {
+    text-shadow: rgba(225,225,225,.5);
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 2px;
+}
+footer span {
+    text-shadow: rgba(225,225,225,.5);
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 4px;
+    padding: 4px;
+}
+.shadow {
+    box-shadow: 10px 10px 5px #000;
+}
+.border {
+    border: 2px solid black;
+}
+.dashed {
+    border: 2px dashed black;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    
+   
+}
+.container-fluid {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    position: sticky;
+} 
+
+.nav-item {
+    color: white;
+}
+li .nav-item .active {
+    border: 1px solid white;
+}
 
 .logo {
     width: 80px;
@@ -11,91 +69,198 @@ body {
 .nav-link {
     font-size: 18px;
 }
-/* social media icons */
-.social {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin-top: 10px;
-    color: white;
-    font-size: 15px;
-}
-.nav-li {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 4px;
-    margin: 10px;
-    transform: transform .2s;
-}
 
-.nav-li:hover {
-    transform: scale(1.2);
-}
-.nav-li a {
+
+.nav-item a {
     color: inherit;
-}
-
-/* nav social icon */
-.s {
-    padding-left: 20px;
-    padding-right: 5px;
-    text-decoration: none;
 }
 
 /* body content */
 .p-container {
-    display: flex;   
+    display: flex; 
+    justify-content: center;  
 }
 
-.p-btn {
+.btn {
     font-size: 20px;
-    border: 2px solid black;
     transition: transform .2s; 
+    margin: 20px;
 }
 
-.p-btn:hover {
+
+.btn:hover {
     transform: scale(1.2);
 }
 
 .type-container {
-    margin: 20px;
+    margin: 10px;
     background-color: #000;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    
+}
+
+.typed {
+    font-size: 20px;
 }
 
 .chev {
     padding: 5px;
 }
 
-.skills-home {
-    margin-top: 20px;
-    padding-top: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+.progress-container {
+    padding-bottom: 20px;
+}
+.progress {
+    margin-bottom: 5px;
+    height: 30px;
+    font-size: 20px;
 }
 
-.skill {
-    color: #000;
+.img-thumbnail {
     min-width: 100px;
-    margin: 20px;
-  
 }
 
-/* end home body*/
+.card {
+    min-width: 150px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.contact-pg {
+    background-image: url('../img/contact-bg.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.contact-ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.form-container {
+    background-color: rgba(225,225,225,.9);
+    box-shadow: 10px 10px 15px black;
+    border-radius: 8px;
+}
+
+label, legend {
+    font-size: 15px;
+    color: black;
+}
+::-webkit-input-placeholder {
+    color:red;
+}
+
+::-moz-placeholder {
+    color:red;
+}
+
+::-ms-placeholder {
+    color:red;
+}
+
+::placeholder {
+    color:red;
+}
+
+.social-icon {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon-li {
+    padding: 20px;
+}
+.icon-container {
+    display: flex;
+    flex-direction: row;
+}
+.icon-container div a {
+    text-decoration: none;
+    transition: 0.2;
+}
+.icon-container div a:hover {
+    transform: scale(1.1);
+}
+/* nav social btn */
+.n-btn {
+    width: 40px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+/* no text decor hover */
+.social-menu li a {
+    text-decoration: none;
+    transition: 0.2;
+}
+.social-menu li a:hover {
+    transform: scale(1.1);
+}
+.s-btn {
+    width: 70px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+.fa-github {
+    background-color: #000;
+    color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+    
+  }
+
+  
+
+
+/* footer */
 
 footer {
     position: fixed;
-    left: 0;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     font-size: 15px;
     color: white;
     text-align: center;
-    background-color: #222;
-    height: 10%;
-    overflow: hidden;
+    min-height: 50px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .social-menu {
+        display: none;
+    }
+    .container-fluid {
+        overflow: scroll;
+    
+    }
+  
+    .card-deck {
+        margin-bottom: 50px;
+    }
+    footer {
+        display: none;
+    }
 }
